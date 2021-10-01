@@ -21,7 +21,7 @@ import lombok.AllArgsConstructor;
 import one.digitalinnovationMarcos.personapi.dto.request.PersonDTO;
 import one.digitalinnovationMarcos.personapi.dto.response.MessageResponseDTO;
 import one.digitalinnovationMarcos.personapi.exception.PersonNotFoundException;
-import one.digitalinnovationMarcos.personapi.service.PersonService;
+import one.digitalinnovationMarcos.personapi.services.PersonService;
 
 @RestController
 @RequestMapping("/api/v1/people")
