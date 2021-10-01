@@ -1,4 +1,4 @@
-package one.digitalinnovationMarcos.personapi.entity;
+package one.digitalinnovationMarcos.personapi.entities;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -44,7 +44,8 @@ public class Person {
 	@OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.REMOVE})
 	private List<Phone> phones;
 	
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@ManyToOne(fetch = FetchType.LAZY
+			,cascade = {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.REMOVE})
 	private Address address;
 	
 }

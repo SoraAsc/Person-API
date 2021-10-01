@@ -1,4 +1,5 @@
-package one.digitalinnovationMarcos.personapi.entity;
+package one.digitalinnovationMarcos.personapi.entities;
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -32,5 +33,5 @@ public class Address {
 	private String city;
 	@Column(nullable = false)
 	private String country;	
-	
+			
 }

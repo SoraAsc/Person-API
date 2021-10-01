@@ -5,7 +5,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 import one.digitalinnovationMarcos.personapi.dto.request.PersonDTO;
-import one.digitalinnovationMarcos.personapi.entity.Person;
+import one.digitalinnovationMarcos.personapi.entities.Person;
 
 @Mapper
 public interface PersonMapper {

@@ -1,4 +1,4 @@
-package one.digitalinnovationMarcos.personapi.entity;
+package one.digitalinnovationMarcos.personapi.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -26,7 +26,7 @@ public class Phone {
 	private Long id;
 	
 	@Enumerated(EnumType.STRING)
-	@Column()
+	@Column(nullable = false)
 	private PhoneType type;
 	
 	@Column(nullable = false, unique = true)
